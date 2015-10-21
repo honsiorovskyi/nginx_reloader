@@ -9,7 +9,6 @@ deploy:
     secure: BXwAw08WDui32y/2WtSTJevhH6OzB4vwbhfG5XQUrYcpYRtKwfVlOfo+57UJiegbg9CdDxiGDNtNoZWFQs+9fpaAz0p6AY2J26ueBaLlojnnWB/PT/POQMhyUt2ZiWSfu6OdzyG/pf3s0Up+cHdOiFeigUZwdWw8DTq/VzcXtMansb01sKYrOsjRgNNOqvzIUO+oFuRkNONIAg5sF3HsvAqbmF3rcHj0m6Tzqil3+JLUrZPsvvulTTsLg6BQLwBy4Mj9q7QLRSymSKI3gkwqmNmkDciftpKvWl5xQAEw6+TOxZCd6XuiJPJ8Mz6LFJmGH9eTRUnfHAU/+J3ANUy4ngHga/Uts5zLBxQ2sGKOZVeWVOwwEJN6BW9w7lo1T60lmNgCCB2r1uYCIJMUDd7JisCTEyi9yzvQAAnIOHBMGhZCf4XVAgtNHejxDpNzO1YN/+hw0JDVq3ToTox8cWSbrzN7lH9M9hh1xqj4fa9qvxmEoDoDPkzdk8n4xYjBE3MjVyH36pPupfUf8Ze3WVu/tfyBGYMbE0Jfn8aYUyaK4BNDamUxr9If5a2Tzu3GdafjSMmbxd+rWpvGKV55IgzxeNY8mOMJqIxH32YhLHVd3hyAseIgyesJziYImUO96cXc9VgWXj87Kufp4IfApeSEQSWOztWM8y1XAMBr5CLh2Eo=
   file: nginx_reloader
   on:
-    branch: master
     tags: true
-    compiler: gcc
+    condition: "$CC = gcc"
     repo: honsiorovskyi/nginx_reloader
